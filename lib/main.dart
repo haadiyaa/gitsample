@@ -34,15 +34,22 @@ class MyHomePage extends StatelessWidget {
       body: Column(
         children: [
           Padding(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             child: Container(
+              padding: const EdgeInsets.all(20),
               width: double.infinity,
               height: 200,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(10),
-                  ),
-                  color: Color.fromARGB(255, 255, 169, 198)),
+              decoration: const BoxDecoration(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(10),
+                ),
+                color: Color.fromARGB(255, 255, 169, 198),
+              ),
+              child: const Text(
+                "Hello",
+                style: TextStyle(fontSize: 30),
+                textAlign: TextAlign.center,
+              ),
             ),
           ),
         ],
