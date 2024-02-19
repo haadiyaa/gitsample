@@ -24,10 +24,28 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Git"),
+        title: const Center(
+            child: Text(
+          "Git",
+          style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+        )),
+        backgroundColor: Color.fromARGB(255, 252, 215, 103),
       ),
-      body: const Center(
-        child: Column(),
+      body: Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: Container(
+              width: double.infinity,
+              height: 200,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(10),
+                  ),
+                  color: Color.fromARGB(255, 255, 169, 198)),
+            ),
+          ),
+        ],
       ),
     );
   }
