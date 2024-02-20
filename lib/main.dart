@@ -36,11 +36,15 @@ class MyHomePage extends StatelessWidget {
       body: const SingleChildScrollView(
         child: Column(
           children: [
+            SizedBox(height: 10,),
+            Divider(),
             MyBox(color: Color.fromARGB(255, 255, 185, 208), text: "Hello"),
             Divider(),
             MyBox(color: Color.fromARGB(255, 130, 248, 179), text: "There"),
             Divider(),
             MyBox(color: Color.fromARGB(255, 252, 177, 255), text: "hi"),
+            Divider(),
+            MyBox(color: Color.fromARGB(255, 255, 246, 165), text: "text"),
           ],
         ),
       ),
