@@ -38,7 +38,7 @@ class MyHomePage extends StatelessWidget {
             Divider(),
             MyBox(color: Color.fromARGB(255, 130, 248, 179), text: "There"),
             Divider(),
-            MyBox(color: Color.fromARGB(255, 252, 177, 255), text: "Hello"),
+            MyBox(color: Color.fromARGB(255, 252, 177, 255), text: "hi"),
           ],
         ),
       ),
