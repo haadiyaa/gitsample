@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
@@ -25,11 +26,12 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-            child: Text(
-          "Git",
-          style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-        )),
-        backgroundColor: const Color.fromARGB(255, 252, 215, 103),
+          child: Text(
+            "Git",
+            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+          ),
+        ),
+        backgroundColor: const Color.fromARGB(255, 255, 225, 135),
       ),
       body: const SingleChildScrollView(
         child: Column(
