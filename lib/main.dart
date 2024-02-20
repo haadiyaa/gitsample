@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:git_sample/mybox.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,66 +31,12 @@ class MyHomePage extends StatelessWidget {
         )),
         backgroundColor: const Color.fromARGB(255, 252, 215, 103),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(20),
-              child: Container(
-                padding: const EdgeInsets.all(20),
-                width: double.infinity,
-                height: 200,
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(10),
-                  ),
-                  color: Color.fromARGB(255, 255, 169, 198),
-                ),
-                child: const Text(
-                  "Hello",
-                  style: TextStyle(fontSize: 30),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(20),
-              child: Container(
-                padding: const EdgeInsets.all(20),
-                width: double.infinity,
-                height: 200,
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(10),
-                  ),
-                  color: Color.fromARGB(255, 146, 153, 247),
-                ),
-                child: const Text(
-                  "There",
-                  style: TextStyle(fontSize: 30),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(20),
-              child: Container(
-                padding: const EdgeInsets.all(20),
-                width: double.infinity,
-                height: 200,
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(10),
-                  ),
-                  color: Color.fromARGB(255, 180, 252, 147),
-                ),
-                child: const Text(
-                  "hi",
-                  style: TextStyle(fontSize: 30),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
+            MyBox(color: Color.fromARGB(255, 255, 185, 208), text: "Hello"),
+            MyBox(color: Color.fromARGB(255, 130, 248, 179), text: "There"),
+            MyBox(color: Color.fromARGB(255, 252, 177, 255), text: "Hello"),
           ],
         ),
       ),
