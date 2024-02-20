@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
@@ -29,30 +28,70 @@ class MyHomePage extends StatelessWidget {
           "Git",
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         )),
-        backgroundColor: Color.fromARGB(255, 252, 215, 103),
+        backgroundColor: const Color.fromARGB(255, 252, 215, 103),
       ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(20),
-            child: Container(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(
               padding: const EdgeInsets.all(20),
-              width: double.infinity,
-              height: 200,
-              decoration: const BoxDecoration(
-                borderRadius: BorderRadius.all(
-                  Radius.circular(10),
+              child: Container(
+                padding: const EdgeInsets.all(20),
+                width: double.infinity,
+                height: 200,
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(10),
+                  ),
+                  color: Color.fromARGB(255, 255, 169, 198),
                 ),
-                color: Color.fromARGB(255, 255, 169, 198),
-              ),
-              child: const Text(
-                "Hello",
-                style: TextStyle(fontSize: 30),
-                textAlign: TextAlign.center,
+                child: const Text(
+                  "Hello",
+                  style: TextStyle(fontSize: 30),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ),
-          ),
-        ],
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: Container(
+                padding: const EdgeInsets.all(20),
+                width: double.infinity,
+                height: 200,
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(10),
+                  ),
+                  color: Color.fromARGB(255, 146, 153, 247),
+                ),
+                child: const Text(
+                  "There",
+                  style: TextStyle(fontSize: 30),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: Container(
+                padding: const EdgeInsets.all(20),
+                width: double.infinity,
+                height: 200,
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(10),
+                  ),
+                  color: Color.fromARGB(255, 180, 252, 147),
+                ),
+                child: const Text(
+                  "hi",
+                  style: TextStyle(fontSize: 30),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
