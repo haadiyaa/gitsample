@@ -35,7 +35,9 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           children: [
             MyBox(color: Color.fromARGB(255, 255, 185, 208), text: "Hello"),
+            Divider(),
             MyBox(color: Color.fromARGB(255, 130, 248, 179), text: "There"),
+            Divider(),
             MyBox(color: Color.fromARGB(255, 252, 177, 255), text: "Hello"),
           ],
         ),
